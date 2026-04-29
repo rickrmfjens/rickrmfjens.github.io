@@ -1,61 +1,73 @@
 <!DOCTYPE html>
-
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <title>Buckett List</title>
-        <link rel="stylesheet" id="main_css" href="css/index.css" media="all">
-        <script src="js/index.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <!-- Main Menu -->
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-              <a class="navbar-brand" href="#">
-                <img width="454" height="110" src="img/In_It_For_The_Fun_-_Indented_and_Italicized-removebg-preview.png">
-              </a>
-              <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="come-see-us.html">Play Dates</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="song-list.html">Song List</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="demos.html">Hear The Buckett</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added for
+responsiveness -->
+    <title>Bucket List</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" id="main_css" href="css/index.css" media="all">
+
+    <!-- JavaScript with 'defer' to prevent render blocking -->
+    <script src="js/index.js" defer></script>
+    <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    
+    <!-- Main Menu -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img width="454" height="110" src="img/In_It_For_The_Fun.png" alt="In It
+For The Fun Logo">
+            </a> 
+            <a class="navbar-brand" href="#" style="margin-left: 40px;">
+                <img width="350" height="60" src="img/RockCountryBluesButton2.jpg"
+alt="Rock Country Blues">
+            </a> <!-- Fixed extra > -->
+
+        </div> <!-- Added closing div -->
+    </nav> <!-- Added closing nav -->
+
+    /* BEGIN BUTTON MODS 0-42226 */
+    <!-- Left Margin Area -->
+    <div class="sidebar">
+        <button onclick="window.location.href = 'index.html'">
+			<img img width="125" height="50" src='img\HomeButton.jpg' alt='New Image'>
+        </button>
+        <button onclick="window.location.href = 'book-the-buckett.html'" >
+			<img img width="125" height="50" src='img\BookButton.jpg' alt='New Image'>
+        </button>
+        <button onclick="window.location.href = 'demos.html'">
+			<img img width="125" height="50" src='img\DemoButton.jpg' alt='New Image'>
+        </button>
+        <button onclick="window.location.href = 'song-list.html'">
+			<img img width="125" height="50" src='img\SongListButton.jpg' alt='New Image'>
+        </button>
+      <!--  <button class="btn">Logout</button> -->
+    </div>
+
+    /* END BUTTON MODS 0-42226 */
 
         <!-- Left Menu -->
           <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <div class="sticky-div">
-                        <h1>Contact Us</h1>
-
-                        <br>
-
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                            </svg>
-                            <a class="contact-link" href="mailto:buckettlistsf@gmail.com">Email Us</a>
-                        </p>
-
-                        <br><br>
-
+                        
                         <h1>Follow Us</h1>
 
                         <br>    
@@ -78,12 +90,6 @@
 
                 <div class="col-md-6 center">
 
-                    <div class="card text-bg-dark">
-                        <div class="card-body">
-                            <h1 class="center no-underline">CLASSIC ROCK, COUNTRY AND A LITTLE BIT OF BLUES!</h1>
-                        </div>
-                    </div>
-                    
                     <!-- Announcements -->
                      
                     <div class="card mb-3 col-md-12 event-post">
@@ -126,25 +132,7 @@
 
                 <div class="col-md-3">
                     <div class="sticky-div">
-                        <a href="book-the-buckett.html" class="mb-5" style="float:right;margin-top:0.5em;">
-                            <img width="210" height="40" src="img/Book-The-Buckett-Btn-blue.png">
-                        </a>
-                        <!--
-                        <div class="card mb-3 col-md-12 event-post">
-                            <div class="row g-0">
-                              <div class="col-md-4">
-                                <img src="img/Alex-111522.jpg" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">OPEN MIC, BLACK JACK’S</h5>
-                                  <p class="card-text">RETURNING IN SEPT.</p>
-                                <p class="card-text"><small>In It For the Fun! &copy;</small></p>
-                                </div>
-                              </div>
-                            </div>
-                             -->
-                        </div>
+                     
                     </div>
                 </div>
             </div>
